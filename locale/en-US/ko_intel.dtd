@@ -1,0 +1,58 @@
+
+<!ENTITY ko_intelTab.label             "ko_intel">
+<!ENTITY ko_intelTab.tip               "Show tab with ko_intel">
+
+<!-- Sidebar -->
+<!ENTITY prefsBtn.label            " Options">
+<!ENTITY prefsBtn.key              "O">
+<!ENTITY sidebarTreeCol1.label     "#">
+<!ENTITY sidebarTreeCol1.tip       "Index according to when was the view opened">
+<!ENTITY sidebarTreeCol2.label     "Name">
+<!ENTITY sidebarTreeCol2.tip       "Name of the view">
+
+<!-- Tree context menu -->
+<!ENTITY showViewCmd.label         "Show view">
+<!ENTITY showViewCmd.key           "S">
+<!ENTITY showViewCmd.tip           "Show selected view">
+<!ENTITY closeViewCmd.label        "Close view">
+<!ENTITY closeViewCmd.key          "C">
+<!ENTITY closeViewCmd.tip          "Close selected view">
+<!ENTITY showPropsDlgCmd.label     "Properties">
+<!ENTITY showPropsDlgCmd.key       "P">
+<!ENTITY showPropsDlgCmd.tip       "Show document properties">
+<!ENTITY mvToOtherTabGrpCmd.label  "Move to other tab group">
+<!ENTITY mvToOtherTabGrpCmd.key    "t">
+<!ENTITY mvToOtherTabGrpCmd.tip    "Move selected view to other tab group">
+<!ENTITY closeAllOthersCmd.label   "Close All Others">
+<!ENTITY closeAllOthersCmd.key     "O">
+<!ENTITY closeAllOthersCmd.tip     "Close all other opened views excluding selected one and Start Page">
+<!ENTITY closeAllCmd.label         "Close All">
+<!ENTITY closeAllCmd.key           "A">
+<!ENTITY closeAllCmd.tip           "Close all opened views excluding Start Page">
+
+<!-- Preferences dialog -->
+<!ENTITY prefWindow.title          "Preferences">
+<!ENTITY paneGeneral.label         "General">
+<!ENTITY paneGeneral.key           "G">
+
+<!ENTITY enableko_intelPref.label      "Enable ko_intel">
+<!ENTITY enableko_intelPref.key        "E">
+
+<!ENTITY completion.label          "Completion">
+<!ENTITY enableCompletion.label    "Enable Completion">
+<!ENTITY clipboard.label           "Clipboard watcher">
+<!ENTITY enableClipboard.label     "Enable Clipboard watcher">
+
+<!ENTITY completionMinWordLength.label "Minimum word length">
+<!ENTITY completionSpeed.label      "Completion speed (ms)*">
+<!ENTITY completionSpeed.tip        "Komodo Restart required">
+<!ENTITY completionItems.label      "Max. number of items*">
+<!ENTITY completionItems.tip        "Komodo Restart required">
+<!ENTITY completionIgnoreCase.label "Ignore case">
+<!ENTITY completionIgnoreCase.tip   "Ignore case on text matching">
+<!ENTITY completionLookHistory.label "Look into other open files">
+<!ENTITY completionLookHistory.tip   "Look into other open files if not enough matches">
+<!ENTITY clipboardItems.label      "Max. number of items*">
+<!ENTITY clipboardItems.tip        "Komodo Restart required">
+
+<!ENTITY last_inserted.label      "Last: ">

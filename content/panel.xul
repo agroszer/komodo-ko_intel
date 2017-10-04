@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://komodo/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/global/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/toolbar.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/platform.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/sidebar.css" type="text/css"?>
+<?xml-stylesheet href="less://komodo/skin/global/global.less" type="text/css"?>
+<?xml-stylesheet href="chrome://ko_intel/skin/ko_intel.css" type="text/css"?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is ko_intel extension.
+   -
+   - The Initial Developer of the Original Code is Ondrej Donek.
+   - Portions created by the Initial Developer are Copyright (C) 2008
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -   Ondrej Donek, <ondrejd@gmail.com> (Original Author)
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % overlayDTD SYSTEM "chrome://ko_intel/locale/ko_intel.dtd">
+  %overlayDTD;
+]>
+
+<page xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <vbox id="ko_intel-left-vbox" flex="1">
+    <vbox id="ko_intel-left-middle-box" flex="1"
+           persist="collapsed height">
+        <hbox id="ko_intel-left-tabpanel-hbox" align="center"
+              class="status-toolbar">
+            <label
+                   id="ko_intel-historyPaneLabel"
+                   value="Clipboard/inteli history:"
+                   class="panel-label desc"/>
+            <spacer flex="1"/>
+
+            <toolbarbutton tooltiptext="&prefsBtn.label;"
+                           oncommand="ko.extensions.ko_intel.doCommand('showPrefs')"
+                           image="chrome://famfamfamsilk/skin/icons/wrench.png"
+                           buttonstyle="pictures"/>
+        </hbox>
+        <tree id="ko_intel-left-clipboardtree" flex="1" hidecolumnpicker="false"
+             seltype="single"
+             class="bg_transparent"
+             ondblclick="ko.extensions.ko_intel.onClipboardTreeDblClick();">
+            <treecols>
+              <treecol id="ko_intel-left-tree-clipboard-col-index"
+                       label="&sidebarTreeCol1.label;"
+                       tooltiptext="&sidebarTreeCol1.tip;"/>
+              <treecol id="ko_intel-left-tree-clipboard-col-label"
+                       label="&sidebarTreeCol2.label;"
+                       tooltiptext="&sidebarTreeCol2.tip;"
+                       primary="true" flex="1"/>
+            </treecols>
+            <treechildren/>
+        </tree>
+    </vbox>
+
+    <splitter id="ko_intel-left-splitter" persist="collapsed">
+      <grippy/>
+    </splitter>
+
+    <vbox id="ko_intel-left-bottom-box" flex="1"
+          persist="collapsed height">
+      <hbox>
+        <label
+               id="ko_intel-openFilesPaneLabel"
+               value="Co.:"
+               class="panel-label desc"/>
+        <textbox id="ko_intel-left-last_inserted"
+                 disabled="true"/>
+      </hbox>
+      <tree id="ko_intel-left-completiontree" flex="1" hidecolumnpicker="false"
+            seltype="single"
+            class="bg_transparent"
+            ondblclick="ko.extensions.ko_intel.onCompletionTreeDblClick();">
+        <treecols>
+          <treecol id="ko_intel-left-tree-completion-col-index"
+                   label="&sidebarTreeCol1.label;"
+                   tooltiptext="&sidebarTreeCol1.tip;"/>
+          <treecol id="ko_intel-left-tree-completion-col-label"
+                   label="&sidebarTreeCol2.label;"
+                   tooltiptext="&sidebarTreeCol2.tip;"
+                   primary="true" flex="1"/>
+        </treecols>
+        <treechildren/>
+      </tree>
+    </vbox>
+  </vbox>
+
+</page>

@@ -1,0 +1,8 @@
+<!ENTITY appName "ko_intel">
+<!ENTITY appFullName "ko_intel">
+<!ENTITY appShortName "ko_intel">
+<!ENTITY appDescription "Intellisense like feature for text.">
+<!ENTITY appVersion "0.6.2">
+<!ENTITY appUrl "https://github.com/agroszer/qwin">
+<!ENTITY vendorName "Adam Groszer">
+<!ENTITY vendorUrl "https://github.com/agroszer/">

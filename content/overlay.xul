@@ -1,0 +1,297 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/global/global.css" type="text/css"?>
+<?xml-stylesheet href="chrome://komodo/skin/bindings/scrolltabs.css" type="text/css"?>
+<?xml-stylesheet href="chrome://ko_intel/skin/ko_intel.css" type="text/css"?>
+
+<!-- ***** BEGIN LICENSE BLOCK *****
+   - Version: MPL 1.1/GPL 2.0/LGPL 2.1
+   -
+   - The contents of this file are subject to the Mozilla Public License Version
+   - 1.1 (the "License"); you may not use this file except in compliance with
+   - the License. You may obtain a copy of the License at
+   - http://www.mozilla.org/MPL/
+   -
+   - Software distributed under the License is distributed on an "AS IS" basis,
+   - WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+   - for the specific language governing rights and limitations under the
+   - License.
+   -
+   - The Original Code is ko_intel extension.
+   -
+   - The Initial Developer of the Original Code is Ondrej Donek.
+   - Portions created by the Initial Developer are Copyright (C) 2008
+   - the Initial Developer. All Rights Reserved.
+   -
+   - Contributor(s):
+   -   Ondrej Donek, <ondrejd@gmail.com> (Original Author)
+   -
+   - Alternatively, the contents of this file may be used under the terms of
+   - either the GNU General Public License Version 2 or later (the "GPL"), or
+   - the GNU Lesser General Public License Version 2.1 or later (the "LGPL"),
+   - in which case the provisions of the GPL or the LGPL are applicable instead
+   - of those above. If you wish to allow use of your version of this file only
+   - under the terms of either the GPL or the LGPL, and not to allow others to
+   - use your version of this file under the terms of the MPL, indicate your
+   - decision by deleting the provisions above and replace them with the notice
+   - and other provisions required by the LGPL or the GPL. If you do not delete
+   - the provisions above, a recipient may use your version of this file under
+   - the terms of any one of the MPL, the GPL or the LGPL.
+   -
+   - ***** END LICENSE BLOCK ***** -->
+
+<!DOCTYPE overlay [
+  <!ENTITY % overlayDTD SYSTEM "chrome://ko_intel/locale/ko_intel.dtd">
+  %overlayDTD;
+]>
+
+<overlay id="ko_intelOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="chrome://komodo/content/library/trace.js"
+          type="application/x-javascript"></script>
+  <script src="chrome://komodo/content/library/dialogs.js"
+          type="application/x-javascript"></script>
+  <script src="chrome://komodo/content/library/controller.js"
+          type="application/x-javascript"></script>
+  <script src="chrome://ko_intel/content/ko_intel.js"
+          type="application/x-javascript"></script>
+
+  <broadcasterset id="broadcasterset_global">
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item1"
+      key="key_ko_intel_clipboard_item1"
+      desc="ko_intel: insert clipboard item 1"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(1);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item2"
+      key="key_ko_intel_clipboard_item2"
+      desc="ko_intel: insert clipboard item 2"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(2);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item3"
+      key="key_ko_intel_clipboard_item3"
+      desc="ko_intel: insert clipboard item 3"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(3);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item4"
+      key="key_ko_intel_clipboard_item4"
+      desc="ko_intel: insert clipboard item 4"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(4);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item5"
+      key="key_ko_intel_clipboard_item5"
+      desc="ko_intel: insert clipboard item 5"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(5);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item6"
+      key="key_ko_intel_clipboard_item6"
+      desc="ko_intel: insert clipboard item 6"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(6);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item7"
+      key="key_ko_intel_clipboard_item7"
+      desc="ko_intel: insert clipboard item 7"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(7);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item8"
+      key="key_ko_intel_clipboard_item8"
+      desc="ko_intel: insert clipboard item 8"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(8);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item9"
+      key="key_ko_intel_clipboard_item9"
+      desc="ko_intel: insert clipboard item 9"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(9);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item10"
+      key="key_ko_intel_clipboard_item10"
+      desc="ko_intel: insert clipboard item 10"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(10);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item11"
+      key="key_ko_intel_clipboard_item11"
+      desc="ko_intel: insert clipboard item 11"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(11);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item12"
+      key="key_ko_intel_clipboard_item12"
+      desc="ko_intel: insert clipboard item 12"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(12);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item13"
+      key="key_ko_intel_clipboard_item13"
+      desc="ko_intel: insert clipboard item 13"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(13);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item14"
+      key="key_ko_intel_clipboard_item14"
+      desc="ko_intel: insert clipboard item 14"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(14);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item15"
+      key="key_ko_intel_clipboard_item15"
+      desc="ko_intel: insert clipboard item 15"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(15);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item16"
+      key="key_ko_intel_clipboard_item16"
+      desc="ko_intel: insert clipboard item 16"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(16);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item17"
+      key="key_ko_intel_clipboard_item17"
+      desc="ko_intel: insert clipboard item 17"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(17);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item18"
+      key="key_ko_intel_clipboard_item18"
+      desc="ko_intel: insert clipboard item 18"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(18);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item19"
+      key="key_ko_intel_clipboard_item19"
+      desc="ko_intel: insert clipboard item 19"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(19);"/>
+    <broadcaster
+      id="cmd_ko_intel_clipboard_item20"
+      key="key_ko_intel_clipboard_item20"
+      desc="ko_intel: insert clipboard item 20"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertClipboard(20);"/>
+
+
+    <broadcaster
+      id="cmd_ko_intel_intelli_item1"
+      key="key_ko_intel_intelli_item1"
+      desc="ko_intel: insert intellisense item 1"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(1);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item2"
+      key="key_ko_intel_intelli_item2"
+      desc="ko_intel: insert intellisense item 2"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(2);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item3"
+      key="key_ko_intel_intelli_item3"
+      desc="ko_intel: insert intellisense item 3"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(3);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item4"
+      key="key_ko_intel_intelli_item4"
+      desc="ko_intel: insert intellisense item 4"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(4);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item5"
+      key="key_ko_intel_intelli_item5"
+      desc="ko_intel: insert intellisense item 5"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(5);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item6"
+      key="key_ko_intel_intelli_item6"
+      desc="ko_intel: insert intellisense item 6"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(6);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item7"
+      key="key_ko_intel_intelli_item7"
+      desc="ko_intel: insert intellisense item 7"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(7);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item8"
+      key="key_ko_intel_intelli_item8"
+      desc="ko_intel: insert intellisense item 8"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(8);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item9"
+      key="key_ko_intel_intelli_item9"
+      desc="ko_intel: insert intellisense item 9"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(9);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item10"
+      key="key_ko_intel_intelli_item10"
+      desc="ko_intel: insert intellisense item 10"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(10);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item11"
+      key="key_ko_intel_intelli_item11"
+      desc="ko_intel: insert intellisense item 11"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(11);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item12"
+      key="key_ko_intel_intelli_item12"
+      desc="ko_intel: insert intellisense item 12"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(12);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item13"
+      key="key_ko_intel_intelli_item13"
+      desc="ko_intel: insert intellisense item 13"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(13);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item14"
+      key="key_ko_intel_intelli_item14"
+      desc="ko_intel: insert intellisense item 14"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(14);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item15"
+      key="key_ko_intel_intelli_item15"
+      desc="ko_intel: insert intellisense item 15"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(15);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item16"
+      key="key_ko_intel_intelli_item16"
+      desc="ko_intel: insert intellisense item 16"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(16);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item17"
+      key="key_ko_intel_intelli_item17"
+      desc="ko_intel: insert intellisense item 17"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(17);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item18"
+      key="key_ko_intel_intelli_item18"
+      desc="ko_intel: insert intellisense item 18"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(18);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item19"
+      key="key_ko_intel_intelli_item19"
+      desc="ko_intel: insert intellisense item 19"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(19);"/>
+    <broadcaster
+      id="cmd_ko_intel_intelli_item20"
+      key="key_ko_intel_intelli_item20"
+      desc="ko_intel: insert intellisense item 20"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(20);"/>
+
+    <broadcaster
+      id="cmd_ko_intel_intelli_item99"
+      key="key_ko_intel_intelli_item99"
+      desc="ko_intel: insert LAST intellisense item"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertIntelli(99);"/>
+
+
+    <broadcaster
+      id="cmd_ko_intel_invers_case_intelli"
+      key="key_ko_intel_invers_case_intelli"
+      desc="ko_intel: force case invers intelli lookup"
+      oncommand="ko.extensions.ko_intel.onHotkeyCaseInsensitiveLookUp();"/>
+
+
+    <broadcaster
+      id="cmd_ko_intel_insert_current_item"
+      key="key_ko_intel_insert_current_item"
+      desc="ko_intel: insert current history item"
+      oncommand="ko.extensions.ko_intel.onHotkeyInsertCurrentHistoryItem();"/>
+
+  </broadcasterset>
+
+  <ko-pane id="workspace_left_area">
+    <browser type="ko-widget"
+             id="ko_intelViewbox"
+             label="&ko_intelTab.label;"
+             insertbefore="codebrowserviewbox"
+             tab_oncommand="ko.extensions.ko_intel.update();"
+             tab_onfocus="ko.extensions.ko_intel.update();"
+             icon="koicon://ko-svg/chrome/icomoon/skin/files.svg"
+	         src="chrome://ko_intel/content/panel.xul"/>
+  </ko-pane>
+
+</overlay>

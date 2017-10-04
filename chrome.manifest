@@ -1,0 +1,5 @@
+content ko_intel jar:ko_intel.jar!/content/ xpcnativewrappers=yes
+locale ko_intel en-US jar:ko_intel.jar!/locale/en-US/
+skin ko_intel classic/1.0 jar:ko_intel.jar!/skin/
+
+overlay chrome://komodo/content/komodo.xul chrome://ko_intel/content/overlay.xul
